@@ -1,0 +1,21 @@
+.scrol{
+    overflow-x: scroll;
+
+}
+.rounded{
+    border-radius: 15px;
+}
+.block-card{
+    margin-left: 220px;
+}
+@media screen and (max-width:578px) {
+   
+    .scrol{
+        overflow-y: scroll;
+        display: flex;
+        flex-direction: column;
+     }
+     .block-card{
+        margin-left: 20px;
+    }
+}

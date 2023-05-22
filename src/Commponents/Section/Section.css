@@ -1,0 +1,66 @@
+.menu{
+   
+    position: fixed;
+    top: 0;
+    left: 100px;
+}
+.section_card{
+  padding-top: 30px;
+  position: fixed;
+  top: 0;
+  left: 100px;
+
+}
+.menu1{
+    width: 180px;
+    height: 100vh;
+    overflow-y:scroll;
+    overflow-x: hidden;
+  
+}
+@media screen and (max-width:1300px){
+  .menu{
+    left: 20px;
+  }
+.nav_card{
+  left: 20px;
+}
+.section_card{
+  position: fixed;
+  top:0;
+  left: 70px;
+}
+
+}
+@media screen and (max-width:1280px){
+  .section_card{
+    position: fixed;
+    top:0;
+    left: 30px;
+  }
+}
+@media screen and (max-width:998px){
+  .section_card{
+    position: fixed;
+    top:0;
+    left: 25px;
+  }
+}
+@media screen and (max-width:768px){
+  .section_card{
+    position: fixed;
+    top:0;
+    left: 20px;
+  }
+}
+@media screen and (max-width:578px){
+  .menu{
+    display: none;
+  }
+  .menu-bar{
+    display: none;
+  }
+  
+ 
+}
+
