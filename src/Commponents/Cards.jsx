@@ -22,7 +22,7 @@ const Cards = () => {
           Element.snippet.title
         }</h1>
         <h2>{Element.snippet.publishTime.slice(0, 10)}</h2>
- 
+
       </div>)
   });
   return (
@@ -33,7 +33,6 @@ const Cards = () => {
           <h1 className="text-2xl font-bold">Dollie Blair</h1>
         </div>
         <div className="scrol flex  mb-24 gap-10">
-
           {firtered}
         </div>
         <h1 className="pb-4 text-2xl font-bold">Recommended</h1>

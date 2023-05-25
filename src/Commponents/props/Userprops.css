@@ -3,10 +3,14 @@
    left: 270px;
 
 }
+.img-card{
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+}
 
 .caard {
-   width: 200px;
-
+   width: 250px;
 }
 
 .ifrem {
@@ -32,6 +36,7 @@
    .card_tittle{
       display: none;
    }
+  
 }
    @media screen and(max-width:578px) {
       .useparam-card {
@@ -44,19 +49,21 @@
          display: none;
       }
       .img-card {
-         width: 50px;
-         height: 41px;
+         width: 25px;
+         height: 25px;
          border-radius: 50%;
       }
       .card-text{
          display: none;
       }
+     
    }
    @media screen and(max-width:340px) {
       .img-card {
-         width: 50px;
-         height: 50px;
+         width: 25px;
+         height: 25px;
          border-radius: 50%;
       }
      
    }
+  

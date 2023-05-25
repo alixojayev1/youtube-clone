@@ -8,21 +8,25 @@ import navImg from '../../assets/imge/navUserpic.png'
 import '../Navigation/Navigation.css'
 import { createContext, useContext, useState } from 'react'
 import { MyContext } from '../Context/Context'
+import { Link } from 'react-router-dom'
+
+
 
 
 
 
 const Navigation = () => {
+
     const { togle, setTogle, setSearch } = useContext(MyContext)
 
     const togleFun = () => {
         setTogle(!togle)
 
     }
-    
+
 
     return (
- 
+
         <div className="sitciy ">
             <div className="container  ">
                 <div className="">
@@ -34,17 +38,18 @@ const Navigation = () => {
                             <img className=' sm:px-5 pe-5  ' src={navicon} alt="icon" />
                             <div className="relative">
                                 <input onChange={(e) => setSearch(e.target.value)} className='   input   mx-70px ' type="text" placeholder='search' />
-                                <BsSearch className=' search hidden sm:block absolute  ' />
+                                <BsSearch className=' search  absolute  md:block hidden ' />
 
                             </div>
-                            <BsSearch className='text-2xl sm:hidden block ' />
+
 
                         </div>
                         <div className="flex items-center ">
                             <AiOutlineVideoCameraAdd className=' hidden md:block text-3xl  ' />
-                            <MdDarkMode  className='text-3xl mx-5' />
+                          
+                            <MdDarkMode  className='text-3xl mx-3  sm:block hidden' />
                             <BsBellFill className='text-3xl me-5  hidden md:block' />
-                            <img className='' src={navImg} alt="png" />
+                            <Link to='/register'> <img className='' src={navImg} alt="png" /></Link>
                         </div>
                     </div>
 

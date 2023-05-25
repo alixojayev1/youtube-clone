@@ -1,6 +1,5 @@
-import { Routes, Route, } from "react-router-dom";
-import { useState } from "react";
-import {ThemeProvider} from 'react'
+import { Routes, Route } from "react-router-dom";
+
 import './App.css'
 
 import Navigation from './Commponents/Navigation/Navigation'
@@ -8,27 +7,36 @@ import Section from './Commponents/Section/Section'
 import Cards from "./Commponents/Cards";
 import Userprops from "./Commponents/props/Userprops";
 import Footer from "./Commponents/Footer/Footer";
+import Register from "./Commponents/Register/Register";
+import Login from "./Commponents/Login/Login";
+
+
+
 
 const App = () => {
+ 
 
   return (
 
-  
-     <div className=''>
-      <Navigation />
+
+    <div className=''>
+
       <div className="container">
-        <div className="">
-          <Section />
-          <Routes>
-            <Route path="/" element={<Cards />} />
-            <Route path={`/:title`} element={<Userprops />} />
 
-          </Routes>
+        <Navigation />
+         <Section />
+           <Routes>
+             <Route path="/" element={<Cards />} />
+             <Route path={`/:title`} element={<Userprops />} />
+             <Route path="/register" element ={<Register/>}/>
+             <Route path = "/login" element= {<Login/>}/>
+            </Routes>
           <Footer />
-        </div>
+      
       </div>
-
     </div>
+
+  
   
 
 

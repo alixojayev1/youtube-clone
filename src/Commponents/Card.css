@@ -1,6 +1,13 @@
 .scrol{
     overflow-x: scroll;
+    
 
+}
+::-webkit-scrollbar{
+    width: 0%;
+}
+.img{
+    max-width: 300px;
 }
 .rounded{
     border-radius: 15px;
@@ -14,6 +21,7 @@
         overflow-y: scroll;
         display: flex;
         flex-direction: column;
+        
      }
      .block-card{
         margin-left: 20px;

@@ -49,13 +49,13 @@ const Userprops = () => {
     <div className="container ">
       <div className=" card_user    ">
         <div className=" useparam-card    "  >
-          {data.filter((Element) => Element?.snippet.title === title).slice(0,10).map((Element, index) =>
+          {data.filter((Element) => Element?.snippet.title === title).slice(0, 10).map((Element, index) =>
           (
             <div className="user-card  " >
               <div key={index} className="card_img"  >
                 <iframe className="ifrem gap-2 " src={`https://www.youtube.com/embed/${Element.id.videoId}`} title="YouTube video player"   ></iframe>
                 <div className="flex   items-center pt-4 mb-4   ">
-                  <h1 className=" hidden md:block text-1xl font-bold">{Element.snippet.title}</h1>
+                  <h1 className="  md:block text-1xl hidden font-bold">{Element.snippet.title}</h1>
                   <div className="flex items-center ml-12  ">
                     <div className="flex items-center">
                       <AiFillLike onClick={myCountplus} className="text-2xl" />
@@ -71,34 +71,32 @@ const Userprops = () => {
                   </div>
                 </div>
 
-                <div className=" flex   mt-4">
+                <div className="    flex items-center   mt-4">
                   <img className=" img-card" src={Element.snippet.thumbnails.default.url} alt="png" />
-                  
+
                   <div className=" pl-2">
-                  <h1 className=" card-text text-2xl font-medium" >{Element.snippet.channelTitle}</h1>
-                    <span>349K подписчик</span>
+                    <h1 className=" card-text text-2xl font-medium md:block  " >{Element.snippet.channelTitle.slice(0,5)}</h1>
+                    <span className="">349K Fllow </span>
                   </div>
                   <div className="mt-4 ml-14  ">
                     <button className="btn-card  " onClick={mySubmit}>{sumbmit ? 'Obuna' : 'Obunasiz'}</button>
                   </div>
                 </div>
-
-
               </div>
             </div>
+
           )
           )
 
           }
         </div>
 
-        <div className="card_ flex  justify-end     ms-16">
-          <div className="caard xl:block hidden">
+        <div className="card_ flex  md:justify-end pt-10   justify-center ms-0   sm:ms-16">
+          <div className="caard ">
             {firtered}
           </div>
         </div>
       </div>
-
     </div>
   );
 
